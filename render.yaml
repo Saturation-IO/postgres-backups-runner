@@ -3,8 +3,8 @@ services:
     type: cron
     schedule: "0 3 * * *"
     region: oregon
-    env: docker
-    plan: standard
+    runtime: docker
+    plan: starter
     dockerfilePath: ./Dockerfile
     autoDeploy: false
     envVars:
